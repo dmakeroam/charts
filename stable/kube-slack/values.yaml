@@ -25,6 +25,9 @@ envVars:
   METRICS_PERCENT: "80"
   ##  If no metrics limit defined, alert if the pod utilization is more than the resource request amount
   METRICS_REQUESTS: "false"
+  ## Monitor a list of specific namespaces, specified either as json array or as a string of comma seperated values (foo_namespace,bar_namespace).
+  # KUBE_NAMESPACES_ONLY: "kube-system"
+
 
 ## Alternative to specify environment values for the deployment via secrets.
 ## See envVars above for some examples
